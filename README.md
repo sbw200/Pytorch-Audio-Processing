@@ -137,7 +137,3 @@ outputs/plots/        Training curves and confusion matrix plots
 scripts/              Utility scripts and inference simulation
 src/                  Dataset, preprocessing, model, training, and evaluation code
 ```
-
-## Notes
-
-The current checkpoint in `outputs/checkpoints/best_model.pt` may be from a smoke test unless full training has been run. Smoke-test metrics are useful only for checking that the pipeline works, not for judging model quality.
