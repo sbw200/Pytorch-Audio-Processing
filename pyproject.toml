@@ -1,0 +1,33 @@
+[project]
+name = "pytorch-audio-processing"
+version = "0.1.0"
+description = "A PyTorch audio processing project skeleton."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchaudio",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "pyyaml",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+    "data",
+    "dataset",
+    "preprocess",
+    "preprocessing",
+    "features",
+    "model",
+    "train",
+    "evaluate",
+    "utils",
+]

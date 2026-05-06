@@ -1,0 +1,13 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+archive (4)/
+archive (4).zip
+data/raw/
+data/processed/
+
+outputs/

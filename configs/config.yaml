@@ -1,0 +1,39 @@
+project:
+  name: pytorch-audio-processing
+  seed: 42
+
+data:
+  dataset_root: archive (4)
+  metadata_csv: archive (4)/UrbanSound8K.csv
+  raw_dir: data/raw
+  processed_dir: data/processed
+  sample_rate: 16000
+  duration_seconds: 4.0
+  normalize: true
+  validation_fold: 1
+  skip_unsupported_audio: true
+
+mel:
+  n_fft: 1024
+  hop_length: 512
+  n_mels: 64
+  power: 2.0
+  amplitude_to_db: true
+
+model:
+  num_classes: 10
+  input_channels: 1
+  conv_channels: [16, 32, 64]
+  dropout: 0.3
+
+training:
+  batch_size: 32
+  epochs: 10
+  learning_rate: 0.001
+  weight_decay: 0.0
+  num_workers: 0
+
+outputs:
+  checkpoints_dir: outputs/checkpoints
+  plots_dir: outputs/plots
+  metrics_dir: outputs/metrics
